@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_gpa" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.garese.pos.approval</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='gp_cashier_restrictions']" position="after">
+                <block title="Manager Approvals" id="gpa_approvals">
+                    <setting string="Discounts Need a Manager"
+                             help="Line or order discount: a manager types his Odoo password on the register. Also checked by the server.">
+                        <field name="pos_gpa_discount_requires_manager"/>
+                    </setting>
+                    <setting string="Price Changes Need a Manager"
+                             help="Changing the price of a line on the register needs a manager's password.">
+                        <field name="pos_gpa_price_requires_manager"/>
+                    </setting>
+                    <setting string="Refunds Need a Manager"
+                             help="Refunding an order needs a manager's password. Also checked by the server.">
+                        <field name="pos_gpa_refund_requires_manager"/>
+                    </setting>
+                    <setting string="Cancellations Need a Manager"
+                             help="Deleting an order line or an order needs a manager's password.">
+                        <field name="pos_gpa_cancel_requires_manager"/>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

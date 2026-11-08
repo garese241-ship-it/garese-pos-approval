@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="gpa_approval_view_tree" model="ir.ui.view">
+        <field name="name">gpa.approval.tree</field>
+        <field name="model">gpa.approval</field>
+        <field name="arch" type="xml">
+            <tree create="0" edit="0" delete="0">
+                <field name="create_date" string="Date"/>
+                <field name="config_id"/>
+                <field name="session_id"/>
+                <field name="purpose"/>
+                <field name="order_uid"/>
+                <field name="cashier_id"/>
+                <field name="manager_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="gpa_approval_view_search" model="ir.ui.view">
+        <field name="name">gpa.approval.search</field>
+        <field name="model">gpa.approval</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="order_uid"/>
+                <field name="cashier_id"/>
+                <field name="manager_id"/>
+                <field name="config_id"/>
+                <filter name="discount" string="Discounts" domain="[('purpose', '=', 'discount')]"/>
+                <filter name="price" string="Price changes" domain="[('purpose', '=', 'price')]"/>
+                <filter name="refund" string="Refunds" domain="[('purpose', '=', 'refund')]"/>
+                <filter name="cancel" string="Cancellations" domain="[('purpose', '=', 'cancel')]"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_manager" string="Manager" context="{'group_by': 'manager_id'}"/>
+                    <filter name="group_cashier" string="Cashier" context="{'group_by': 'cashier_id'}"/>
+                    <filter name="group_purpose" string="Action" context="{'group_by': 'purpose'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="gpa_approval_action" model="ir.actions.act_window">
+        <field name="name">Manager Approvals</field>
+        <field name="res_model">gpa.approval</field>
+        <field name="view_mode">tree</field>
+    </record>
+    <menuitem id="gpa_approval_menu" name="Manager Approvals" parent="point_of_sale.menu_point_rep"
+              action="gpa_approval_action" groups="point_of_sale.group_pos_manager" sequence="60"/>
+</odoo>

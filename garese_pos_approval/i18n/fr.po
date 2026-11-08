@@ -1,0 +1,394 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* garese_pos_approval
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-02 20:41+0000\n"
+"PO-Revision-Date: 2026-11-02 20:41+0000\n"
+"Last-Translator: \n"
+"Language-Team: GARESE\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,help:garese_pos_approval.field_pos_config__gpa_price_requires_manager
+#: model:ir.model.fields,help:garese_pos_approval.field_res_config_settings__pos_gpa_price_requires_manager
+msgid ""
+"A cashier needs a manager's password to change the price of a line on the "
+"register."
+msgstr ""
+"Un caissier a besoin du mot de passe d'un responsable pour changer le prix "
+"d'une ligne sur la caisse."
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,help:garese_pos_approval.field_pos_config__gpa_cancel_requires_manager
+#: model:ir.model.fields,help:garese_pos_approval.field_res_config_settings__pos_gpa_cancel_requires_manager
+msgid ""
+"A cashier needs a manager's password to delete an order line or an order."
+msgstr ""
+"Un caissier a besoin du mot de passe d'un responsable pour supprimer une "
+"ligne de commande ou une commande."
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,help:garese_pos_approval.field_pos_config__gpa_discount_requires_manager
+#: model:ir.model.fields,help:garese_pos_approval.field_res_config_settings__pos_gpa_discount_requires_manager
+msgid ""
+"A cashier needs a manager's password to give a discount (line or order)."
+msgstr ""
+"Un caissier a besoin du mot de passe d'un responsable pour accorder une "
+"remise (ligne ou commande)."
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,help:garese_pos_approval.field_pos_config__gpa_refund_requires_manager
+#: model:ir.model.fields,help:garese_pos_approval.field_res_config_settings__pos_gpa_refund_requires_manager
+msgid "A cashier needs a manager's password to refund an order."
+msgstr ""
+"Un caissier a besoin du mot de passe d'un responsable pour rembourser une "
+"commande."
+
+#. module: garese_pos_approval
+#. odoo-python
+#: code:addons/garese_pos_approval/models/pos_approval.py:0
+#, python-format
+msgid "A manager must approve this order (%(what)s) before it is saved."
+msgstr ""
+"Un responsable doit approuver cette commande (%(what)s) avant son "
+"enregistrement."
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "A manager must type his password to delete this line."
+msgstr ""
+"Un responsable doit saisir son mot de passe pour supprimer cette ligne."
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "A manager must type his password to delete this order."
+msgstr ""
+"Un responsable doit saisir son mot de passe pour supprimer cette commande."
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "A manager must type his password to do this."
+msgstr "Un responsable doit saisir son mot de passe pour faire cela."
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "A manager must type his password to refund."
+msgstr "Un responsable doit saisir son mot de passe pour rembourser."
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid ""
+"A manager's authorization needs the server. Check the network and try again."
+msgstr ""
+"L'autorisation du responsable nécessite le serveur. Vérifiez le réseau et "
+"réessayez."
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.gpa_approval_view_search
+msgid "Action"
+msgstr "Action"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__manager_id
+msgid "Approved By"
+msgstr "Approuvé par"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields.selection,name:garese_pos_approval.selection__gpa_approval__purpose__cancel
+msgid "Cancellation"
+msgstr "Annulation"
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "Cancellation approved by a manager"
+msgstr "Annulation approuvée par un responsable"
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.gpa_approval_view_search
+msgid "Cancellations"
+msgstr "Annulations"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_pos_config__gpa_cancel_requires_manager
+#: model:ir.model.fields,field_description:garese_pos_approval.field_res_config_settings__pos_gpa_cancel_requires_manager
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.res_config_settings_view_form_gpa
+msgid "Cancellations Need a Manager"
+msgstr "Annulations soumises à un responsable"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__cashier_id
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.gpa_approval_view_search
+msgid "Cashier"
+msgstr "Caissier"
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.res_config_settings_view_form_gpa
+msgid ""
+"Changing the price of a line on the register needs a manager's password."
+msgstr ""
+"Changer le prix d'une ligne sur la caisse demande le mot de passe d'un "
+"responsable."
+
+#. module: garese_pos_approval
+#: model:ir.model,name:garese_pos_approval.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.gpa_approval_view_tree
+msgid "Date"
+msgstr "Date"
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.res_config_settings_view_form_gpa
+msgid "Deleting an order line or an order needs a manager's password."
+msgstr ""
+"Supprimer une ligne de commande ou une commande demande le mot de passe d'un"
+" responsable."
+
+#. module: garese_pos_approval
+#: model:ir.model.fields.selection,name:garese_pos_approval.selection__gpa_approval__purpose__discount
+msgid "Discount"
+msgstr "Remise"
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "Discount approved by a manager"
+msgstr "Remise approuvée par un responsable"
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.gpa_approval_view_search
+msgid "Discounts"
+msgstr "Remises"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_pos_config__gpa_discount_requires_manager
+#: model:ir.model.fields,field_description:garese_pos_approval.field_res_config_settings__pos_gpa_discount_requires_manager
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.res_config_settings_view_form_gpa
+msgid "Discounts Need a Manager"
+msgstr "Remises soumises à un responsable"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.gpa_approval_view_search
+msgid "Group By"
+msgstr "Regrouper par"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__id
+msgid "ID"
+msgstr "ID"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__write_uid
+msgid "Last Updated by"
+msgstr "Dernière modification par"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__write_date
+msgid "Last Updated on"
+msgstr "Dernière modification le"
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.res_config_settings_view_form_gpa
+msgid ""
+"Line or order discount: a manager types his Odoo password on the register. "
+"Also checked by the server."
+msgstr ""
+"Remise de ligne ou de commande : un responsable saisit son mot de passe Odoo"
+" sur la caisse. Contrôlé aussi par le serveur."
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.gpa_approval_view_search
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: garese_pos_approval
+#: model:ir.actions.act_window,name:garese_pos_approval.gpa_approval_action
+#: model:ir.ui.menu,name:garese_pos_approval.gpa_approval_menu
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.res_config_settings_view_form_gpa
+msgid "Manager Approvals"
+msgstr "Approbations des responsables"
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "No connection"
+msgstr "Pas de connexion"
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "No manager"
+msgstr "Aucun responsable"
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid ""
+"No user is manager of this Point of Sale: nobody can authorize this action."
+msgstr ""
+"Aucun utilisateur n'est responsable de ce point de vente : personne ne peut "
+"autoriser cette action."
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__note
+msgid "Note"
+msgstr "Note"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__order_uid
+msgid "Order Reference"
+msgstr "Référence de la commande"
+
+#. module: garese_pos_approval
+#: model:ir.model,name:garese_pos_approval.model_gpa_approval
+msgid "POS manager approval"
+msgstr "Approbation d'un responsable du point de vente"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__config_id
+msgid "Point of Sale"
+msgstr "Point de vente"
+
+#. module: garese_pos_approval
+#: model:ir.model,name:garese_pos_approval.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuration du point de vente"
+
+#. module: garese_pos_approval
+#: model:ir.model,name:garese_pos_approval.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Commandes du point de vente"
+
+#. module: garese_pos_approval
+#: model:ir.model,name:garese_pos_approval.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Session du point de vente"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_pos_config__gpa_price_requires_manager
+#: model:ir.model.fields,field_description:garese_pos_approval.field_res_config_settings__pos_gpa_price_requires_manager
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.res_config_settings_view_form_gpa
+msgid "Price Changes Need a Manager"
+msgstr "Changements de prix soumis à un responsable"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields.selection,name:garese_pos_approval.selection__gpa_approval__purpose__price
+msgid "Price change"
+msgstr "Changement de prix"
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "Price change approved by a manager"
+msgstr "Changement de prix approuvé par un responsable"
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.gpa_approval_view_search
+msgid "Price changes"
+msgstr "Changements de prix"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__purpose
+msgid "Purpose"
+msgstr "Objet"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,help:garese_pos_approval.field_gpa_approval__order_uid
+msgid "Reference of the order on the register (e.g. Order 00012-001-0004)."
+msgstr "Référence de la commande sur la caisse (ex. Commande 00012-001-0004)."
+
+#. module: garese_pos_approval
+#: model:ir.model.fields.selection,name:garese_pos_approval.selection__gpa_approval__purpose__refund
+msgid "Refund"
+msgstr "Remboursement"
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "Refund approved by a manager"
+msgstr "Remboursement approuvé par un responsable"
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.res_config_settings_view_form_gpa
+msgid ""
+"Refunding an order needs a manager's password. Also checked by the server."
+msgstr ""
+"Rembourser une commande demande le mot de passe d'un responsable. Contrôlé "
+"aussi par le serveur."
+
+#. module: garese_pos_approval
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.gpa_approval_view_search
+msgid "Refunds"
+msgstr "Remboursements"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_pos_config__gpa_refund_requires_manager
+#: model:ir.model.fields,field_description:garese_pos_approval.field_res_config_settings__pos_gpa_refund_requires_manager
+#: model_terms:ir.ui.view,arch_db:garese_pos_approval.res_config_settings_view_form_gpa
+msgid "Refunds Need a Manager"
+msgstr "Remboursements soumis à un responsable"
+
+#. module: garese_pos_approval
+#: model:ir.model.fields,field_description:garese_pos_approval.field_gpa_approval__session_id
+msgid "Session"
+msgstr "Session"
+
+#. module: garese_pos_approval
+#. odoo-javascript
+#: code:addons/garese_pos_approval/static/src/app/approval.js:0
+#, python-format
+msgid "This order has a discount: a manager must type his password."
+msgstr ""
+"Cette commande a une remise : un responsable doit saisir son mot de passe."
+
+#. module: garese_pos_approval
+#. odoo-python
+#: code:addons/garese_pos_approval/models/pos_approval.py:0
+#, python-format
+msgid "Unknown action."
+msgstr "Action inconnue."
